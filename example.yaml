@@ -1,5 +1,5 @@
 name: Example Workflow
-on: Push
+on: push
 
 jobs:
   first-jobs:
