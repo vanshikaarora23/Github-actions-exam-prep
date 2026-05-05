@@ -7,26 +7,27 @@ jobs:
         steps:
             - name: Show OS
               run: |
-                "This job is running on an $RUNNER_OS runner."
+                echo "This job is running on an linux runner."
+                echo "Runner OS:  $RUNNER_OS"
 
 
 
-    windows-echo:
-        runs-on: windows-latest
-        steps:
-            - name: Show OS
-              run: |
-                echo "This job is running on a Windows runner."
-                The runner is running on: $RUNNER_OS
+    # windows-echo:
+    #     runs-on: windows-latest
+    #     steps:
+    #         - name: Show OS
+    #           run: |
+    #             echo "This job is running on a Windows runner."
+    #             The runner is running on: $RUNNER_OS
 
-    mac-echo:
-        runs-on: macos-latest
-        steps:  
-            - name: Show OS
-              run: |
-                echo "This job is running on a MacOS runner."   
-                $RUNNER_OS
-                exit 1
+    # mac-echo:
+    #     runs-on: macos-latest
+    #     steps:  
+    #         - name: Show OS
+    #           run: |
+    #             echo "This job is running on a MacOS runner."   
+    #             $RUNNER_OS
+    #             exit 1
 
 
 
